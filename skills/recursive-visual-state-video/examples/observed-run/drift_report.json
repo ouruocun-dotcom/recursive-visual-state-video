@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "reference_frame": "frames/frame_000.png",
+  "assessment_type": "qualitative_visual_review",
+  "frames": [
+    {
+      "frame_range": "frame_000 through frame_010",
+      "compared_with": {
+        "previous": "each immediately preceding frame",
+        "reference": "frames/frame_000.png"
+      },
+      "legitimate_temporal_change": [
+        "the subject's right hand and arm rise over time"
+      ],
+      "detected_drift": [
+        "softness_or_blur_in_later_frames",
+        "warm_appearance_shift",
+        "some_composition_and_pose_drift"
+      ],
+      "image_degradation": [
+        "fine-detail softness was visible in the later sequence"
+      ],
+      "reported_but_not_quantified": [
+        "red_speckle_or_noise"
+      ],
+      "geometry_identity_drift": [
+        "later composition and pose were not perfectly stable; subject remained recognizable"
+      ],
+      "motion_overshoot": {
+        "detected": true,
+        "evidence": "the final hand was above the head while the requested target was approximately shoulder height"
+      },
+      "confidence": "medium",
+      "evidence_method": "ordered contact sheet and direct visual comparison",
+      "repair": {
+        "applied": true,
+        "scope": "frame_010 only",
+        "output": "frames_restored/frame_010.png",
+        "operations": [
+          "reference-anchored visual-quality restoration prompt"
+        ],
+        "motion_state_preserved": true
+      },
+      "validation": "passed_qualitative_single_frame_review_and_png_decode"
+    }
+  ],
+  "limitations": [
+    "No quantitative image-quality metric or independent evaluator was used.",
+    "A single restored frame does not establish restoration performance across a sequence or across models.",
+    "The restoration was visually inspected against current and reference frames; this is not a pixel-identical or lossless restoration claim."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "run_id": "observed-recursive-living-room-pilot",
+  "reference_frame": "frames/frame_000.png",
+  "frames_dir": "frames",
+  "restored_dir": "frames_restored",
+  "first_frame": 0,
+  "target_last_frame": 10,
+  "current_frame": 10,
+  "motion": {
+    "description": "Raise the subject's right hand slowly toward shoulder height.",
+    "state_at_current_frame": "right hand overhead in the generated sequence",
+    "per_frame_limit": "small incremental movement was requested; observed later movement overshot the shoulder-height target",
+    "coordinate_or_pose_notes": "Anatomical right hand."
+  },
+  "image_tool": {
+    "name": "Codex desktop image_gen.imagegen (observed session)",
+    "local_image_input_verified": true,
+    "output_file_path_or_decode_verified": true
+  },
+  "verified_frames": [
+    "frames/frame_000.png",
+    "frames/frame_001.png",
+    "frames/frame_002.png",
+    "frames/frame_003.png",
+    "frames/frame_004.png",
+    "frames/frame_005.png",
+    "frames/frame_006.png",
+    "frames/frame_007.png",
+    "frames/frame_008.png",
+    "frames/frame_009.png",
+    "frames/frame_010.png"
+  ],
+  "updated_at": "2026-10-01"
+}
